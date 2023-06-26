@@ -10,4 +10,5 @@ module.exports = {
   updateContact: ctrlWrapper(contacts.updateContact),
   updateStatusContact: ctrlWrapper(contacts.updateStatusContact),
   register: ctrlWrapper(user.register),
+  login: ctrlWrapper(user.login),
 };
