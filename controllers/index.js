@@ -13,4 +13,5 @@ module.exports = {
   login: ctrlWrapper(user.login),
   getCurrent: ctrlWrapper(user.getCurrent),
   logout: ctrlWrapper(user.logout),
+  changeSubscription: ctrlWrapper(user.changeSubscription),
 };
