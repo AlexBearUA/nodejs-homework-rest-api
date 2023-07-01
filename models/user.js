@@ -7,6 +7,7 @@ const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 const userSchema = new Schema(
   {
     name: { type: String, required: true },
+
     email: {
       type: String,
       match: emailRegex,
@@ -17,6 +18,11 @@ const userSchema = new Schema(
     password: {
       type: String,
       minlength: 6,
+      required: true,
+    },
+
+    avatarURL: {
+      type: String,
       required: true,
     },
 
